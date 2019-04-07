@@ -1,0 +1,9 @@
+version: '3'
+services:
+  python:
+    image: continuumio/anaconda3
+    ports:
+      - '80:80'
+    volumes:
+      - ./app:/var/www/html
+    tty: true
